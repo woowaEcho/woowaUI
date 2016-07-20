@@ -1,5 +1,7 @@
 var gulp = require('gulp'),
-    sass = require('gulp-sass')
+    sass = require('gulp-sass'),
+    rename = require('gulp-rename'),
+    hbs  = require('gulp-compile-handlebars');
 
 var config = {
     bootstrapDir: './node_modules/bootstrap-sass',
@@ -20,6 +22,17 @@ gulp.task('fonts', function() {
 gulp.task('js', function() {
   gulp.src(config.bootstrapDir + '/assets/javascripts/bootstrap.min.js')
   .pipe(gulp.dest(config.publicDir + '/js'))
-})
+});
 
-gulp.task('default', ['css', 'js', 'fonts']);
+gulp.task('view', function() {
+    var options = {
+      batch : ['./view/partials']
+    }
+
+    return gulp.src('view/main.hbs')
+      .pipe(hbs('', options))
+      .pipe(rename('main.html'))
+      .pipe(gulp.dest('html'));
+});
+
+gulp.task('default', ['css', 'js', 'fonts', 'view']);
