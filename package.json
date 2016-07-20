@@ -1,0 +1,22 @@
+{
+  "name": "woowa-ui",
+  "version": "1.0.0",
+  "description": "woowahanUI for woowahan backoffice",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woowaEcho/woowaUI.git"
+  },
+  "author": "webUIDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woowaEcho/woowaUI/issues"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
