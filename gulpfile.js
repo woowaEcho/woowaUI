@@ -26,7 +26,7 @@ gulp.task('js', function() {
 
 gulp.task('view', function() {
     var options = {
-      batch : ['./view/partials']
+      batch : ['./view/module']
     }
 
     return gulp.src('view/main.hbs')
