@@ -11,6 +11,7 @@ var config = {
 gulp.task('css', function() {
   gulp.src("scss/bootstrap.scss")
   .pipe(sass({outputStyle:'compressed'}))
+	.pipe(rename('bootstrap.min.css'))
   .pipe(gulp.dest(config.publicDir + '/css'));
 });
 

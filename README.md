@@ -23,7 +23,7 @@ woowahanUI/
 ├── html/
 └── dist/
     ├── css
-    │   ├── bootstrap.css
+    │   ├── bootstrap.min.css
     ├── js
     │   ├── bootstrap.min.js
     └── fonts
