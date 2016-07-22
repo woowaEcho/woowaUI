@@ -1,7 +1,7 @@
 {
-  "name": "woowa-ui",
+  "name": "woowahan-ui",
   "version": "1.0.0",
-  "description": "woowahanUI for woowahan backoffice",
+  "description": "woowahan-ui for woowahan backoffice",
   "main": "index.js",
   "repository": {
     "type": "git",
